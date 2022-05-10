@@ -1,0 +1,96 @@
+
+[2022-05-10 21:04:45] Traceback (most recent call last):
+  File "lifespan_handler.pyx", line 116, in cefpython_py37.LifespanHandler_OnBeforeClose
+  File "utils.pyx", line 50, in cefpython_py37.Debug
+KeyboardInterrupt
+
+
+[2022-05-10 21:24:54] Traceback (most recent call last):
+  File ".\launch.py", line 55, in <module>
+    main()
+  File ".\launch.py", line 17, in main
+    # server.join()
+  File "C:\Users\Matteo-Dev Robotik\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 140, in join
+    res = self._popen.wait(timeout)
+  File "C:\Users\Matteo-Dev Robotik\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 104, in wait
+    res = _winapi.WaitForSingleObject(int(self._handle), msecs)
+KeyboardInterrupt
+
+
+[2022-05-10 21:24:54] Traceback (most recent call last):
+  File ".\launch.py", line 55, in <module>
+    main()
+  File ".\launch.py", line 17, in main
+    # server.join()
+  File "C:\Users\Matteo-Dev Robotik\AppData\Local\Programs\Python\Python37\lib\multiprocessing\process.py", line 140, in join
+    res = self._popen.wait(timeout)
+  File "C:\Users\Matteo-Dev Robotik\AppData\Local\Programs\Python\Python37\lib\multiprocessing\popen_spawn_win32.py", line 104, in wait
+    res = _winapi.WaitForSingleObject(int(self._handle), msecs)
+KeyboardInterrupt
+
+
+[2022-05-10 21:56:43] Traceback (most recent call last):
+  File "launch.py", line 52, in <module>
+    main()
+  File "launch.py", line 13, in main
+    start_cef_viewer()
+  File "launch.py", line 21, in start_cef_viewer
+    cef.CreateBrowserSync(url="http://127.0.0.1:8000/", window_title="ChipScanner")
+  File "cefpython_py37.pyx", line 682, in cefpython_py37.CreateBrowserSync
+AssertionError: cefpython.CreateBrowserSync() may only be called on the UI thread
+
+
+[2022-05-10 19:56:46] Traceback (most recent call last):
+  File "launch.py", line 52, in <module>
+    main()
+  File "launch.py", line 13, in main
+    start_cef_viewer()
+  File "launch.py", line 21, in start_cef_viewer
+    cef.CreateBrowserSync(url="http://127.0.0.1:8000/", window_title="ChipScanner")
+  File "cefpython_py37.pyx", line 682, in cefpython_py37.CreateBrowserSync
+AssertionError: cefpython.CreateBrowserSync() may only be called on the UI thread
+
+
+[2022-05-10 21:58:30] Traceback (most recent call last):
+  File "launch.py", line 52, in <module>
+    main()
+  File "launch.py", line 13, in main
+    start_cef_viewer()
+  File "launch.py", line 21, in start_cef_viewer
+    cef.CreateBrowserSync(url="http://127.0.0.1:8000/", window_title="ChipScanner")
+  File "cefpython_py37.pyx", line 682, in cefpython_py37.CreateBrowserSync
+AssertionError: cefpython.CreateBrowserSync() may only be called on the UI thread
+
+
+[2022-05-10 19:58:33] Traceback (most recent call last):
+  File "launch.py", line 52, in <module>
+    main()
+  File "launch.py", line 13, in main
+    start_cef_viewer()
+  File "launch.py", line 21, in start_cef_viewer
+    cef.CreateBrowserSync(url="http://127.0.0.1:8000/", window_title="ChipScanner")
+  File "cefpython_py37.pyx", line 682, in cefpython_py37.CreateBrowserSync
+AssertionError: cefpython.CreateBrowserSync() may only be called on the UI thread
+
+
+[2022-05-10 21:59:57] Traceback (most recent call last):
+  File "launch.py", line 52, in <module>
+    main()
+  File "launch.py", line 13, in main
+    start_cef_viewer()
+  File "launch.py", line 21, in start_cef_viewer
+    cef.CreateBrowserSync(url="http://127.0.0.1:8000/", window_title="ChipScanner")
+  File "cefpython_py37.pyx", line 682, in cefpython_py37.CreateBrowserSync
+AssertionError: cefpython.CreateBrowserSync() may only be called on the UI thread
+
+
+[2022-05-10 20:00:01] Traceback (most recent call last):
+  File "launch.py", line 52, in <module>
+    main()
+  File "launch.py", line 13, in main
+    start_cef_viewer()
+  File "launch.py", line 21, in start_cef_viewer
+    cef.CreateBrowserSync(url="http://127.0.0.1:8000/", window_title="ChipScanner")
+  File "cefpython_py37.pyx", line 682, in cefpython_py37.CreateBrowserSync
+AssertionError: cefpython.CreateBrowserSync() may only be called on the UI thread
+

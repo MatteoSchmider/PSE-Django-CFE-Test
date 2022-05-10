@@ -1,0 +1,75 @@
+.leftpart {
+    width: 70%;
+    border-right: 1px solid #7e7e7e7e;
+}
+
+.rightpart {
+    width: 30%;
+    border-left: 1px solid #7e7e7e7e;
+}
+
+.serialiface {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 1em 0 1em;
+}
+
+.whole-gui {
+    display: flex;
+    flex-direction: row;
+}
+
+.visualizer {
+    height: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.visualization {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+textarea {
+    resize: none !important;
+    font-family: monospace !important;
+}
+
+.serial-console {
+    height: 22%;
+}
+
+.textinput-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.serial-input {
+    width: 100%;
+    margin: 0 1em 0 0;
+}
+
+.mlr {
+    margin: 0 1em 0 1em;
+}
+
+.ml-3 {
+    margin-left: 3em;
+}
+
+html,
+body,
+.whole-gui {
+    height: 99.5%;
+    overflow-y: hidden;
+}
+
+hr {
+    width: 90%;
+    margin: 1em auto 1em auto !important;
+}

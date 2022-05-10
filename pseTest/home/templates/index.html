@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ChipScan</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/index.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="whole-gui">
+        <div class="leftpart">
+            <div class="visualizer">
+                {% load static %}
+                <img class="visualization" src="{% static 'home/images/visualization.png' %}" alt="The visualization of the EM field over the chip">
+            </div>
+            <hr>
+            <div class="serialiface">
+                <textarea class="serial-console" disabled>
+Starting Serial interface with baut rate 9600...
+Detected ARM based system...
+Setting up UART interface...
+DEV->HOST: Loaded Linux kernel version 5.0.2
+DEV->HOST: UART interface ready.
+Ready to accept inputs.
+HOST->DEV: setmode encrypt
+DEV->HOST: Device mode set to "encrypt"
+Line to demonstrate scrollbar</textarea>
+                <div class="textinput-div">
+                    <textarea class="serial-input"></textarea>
+                    <input type="button" value="Send" class="btn btn-primary">
+                </div>
+
+            </div>
+        </div>
+        <div class="rightpart">
+            <form class="form-horizontal mlr mt-3">
+                <div class="row g-3 align-items-center">
+                    <legend class="form-label">Scan settings</legend>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="scanresInput" aria-describedby="scanresInputHelp">
+                        <label for="scanresInput">Scan resolution</label>
+                    </div>
+                    <div class="form-floating">
+                        <span id="scanresInputHelp" class="form-text">
+                            Must be &ge; 20&#x3BC;m
+                        </span>
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center mt-1">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="scanXSize">
+                        <label for="scanXSize">x size of scan region</label>
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center mt-1">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="scanYSize">
+                        <label for="scanYSize">y size of scan region</label>
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center mt-1">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="osciRes">
+                        <label for="osciRes">Oscilloscope resolution</label>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <form class="form-horizontal mlr mt-3">
+                <legend class="form-label">Post-scan</legend>
+                <div class="row g-3 align-items-center mt-1">
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option selected>Select function to be applied...</option>
+                            <option value="1">FFT</option>
+                            <option value="2">Geometric mean</option>
+                            <option value="3">Average</option>
+                        </select>
+                        <label for="osciRes">Visualization function</label>
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center mt-1">
+                    <div class="form-floating">
+                        <span>File size estimate: </span>
+                        <input type="button" class="btn btn-success ml-3" value="save file" disabled>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <p>Area for manually moving the probe and starting the scan. To be implemented</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
